@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>UR 회원가입 page</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+		<div style="display:block;text-align:center;position:relative;top:10px"> <p><span style="z-index:2; background-color:white; border-radius: 15px 15px 15px 0; top: 10px;margin-top: 5px;border: 3px solid #FFAD5B; text-align: center; position: relative; padding: 0.5em 0.6em; color: #FF8000;font-weight: bolder;font-size:30px;">
+           <img src="images/men.png"width="50px"; height="50px"; style="margin-top: 20px;">Welcome UR Color<img src="images/wo.png"width="50px"; height="50px";style="margin-top: 20px;"></span></p>
+					</div>
+		
+
+
+<div id ="aline" style="border: 5px solid pink;border-radius: 15px 15px 15px 0; width: 1250px; position:absolute;top:100px;left:300px">
+		
+			
+			
+		
+		
+			<ul class="actions vertical" style="position:relative;top:50px">
+							
+							
+							
+							
+							
+				<form action="JoinService.do" method="post">
+								
+								<div style="margin-bottom:70px">
+								<h3 style="float:left;display:block;width:400px">ID(e-mail을 입력해주세요)</h3> 
+									<input type="email" id="in_email" name = "email" placeholder="Email을 입력하세요" style="width: 500px; border: 5px solid pink; height:50px;float:left;margin-left:50px">
+										<p id = "p1"></p>
+									<input type="button" value="ID중복확인" onclick="ajaxCall()"  style="width: 150px; border: 5px solid red; height:50px;float:left;margin-left:50px"><br>
+									</div>
+									
+								<div style="margin-bottom:75px">	
+									<h3 style="float:left;display:block;width:400px">PW(8자리 패스워드를 입력해주세요)</h3> 
+									<input type="password"  name = "pw"placeholder="8자리 PW를 입력하세요"  style="width: 500px; border: 5px solid pink; height:50px;float:left;margin-left:50px"><br>
+								</div>
+								
+								<div style="margin-bottom:100px">	
+									<h3 style="float:left;display:block;width:400px">PW(다시한번 확인 입력해주세요)</h3> 
+									<input type="password" name="pw2"placeholder="PW를 재입력하세요"  style="width: 500px; border: 5px solid pink; height:50px;float:left;margin-left:50px"><br>
+								
+										</div>
+								
+									
+									
+								<div style="margin-bottom:100px">
+									<h3 style="float:left;display:block;width:400px">전화번호를 입력해주세요</h3> 
+									<input type="text"  name="tel" pattern ="[0-1]{3}-[0-9]{4}-[0-9]{4}" title="###-####-####"placeholder="전화번호를 입력하세요"  style="width: 500px; border: 5px solid pink; height:50px;float:left;margin-left:50px"><br>
+									 </div>
+									 
+									<div style="margin-bottom:50px"> 
+									<h3 style="float:left;display:block;width:450px;margin:0">통신사(체크선택 하여주세요)</h3> 
+   
+       								<h3>SKT<input type="radio" name="telecom" value="skt" style="margin-right:100px">
+     								 KT<input type="radio" name="telecom" value="kt" style="margin-right:100px">
+          							 LGU+<input type="radio" name="telecom" value="lgu" style="margin-right:100px">
+          							 기타<input type="radio" name="telecom" value="other" style="margin-right:100px"></h3>
+     								</div>
+   									
+   									
+   									
+   									<div style="margin-bottom:70px"> 
+   									<h3 style="float:left;display:block;width:400px">닉네임을 입력해주세요</h3>
+									<input type="text"  name="nick" placeholder="닉네임을 입력해주세요"  style="width: 500px; border: 5px solid pink; height:50px;float:left;margin-left:50px"><br>
+									</div>
+						
+									<div style="margin-bottom:70px"> 
+									<h3 style="float:left;display:block;width:400px">생년월일을 입력해 주세요</h3>
+						            <input type="text"  name = "birth" pattern ="{4}" title="####"placeholder="출생년도 ex[2000.01.01]입력"  style="width: 500px; border: 5px solid pink; height:50px;float:left;margin-left:50px"><br>
+									</div>
+           
+            
+                <div style="margin-bottom:70px"><h3 style="float:left;display:block;width:400px;">직업(직업을 입력해주세요)</h3> 
+               <select name="user_job" style="width:500px;border:5px solid pink;height:50px;float:left;margin-left:50px">
+                        <option value="student">학생</option>
+                        <option value="teacher">공무원</option>
+                        <option value="developer">개발자</option>
+                        <option value="publisher">자영업</option>
+                        <option value="driver">SMHRD 직원</option>
+                        <option value="other">기타</option>
+                    </select></div>
+           
+           <div style="height:40px;display:block;width:1200px;position:relative"></div>
+           
+           
+           <input type="submit"  value="회원가입 완료" style="width: 300px;border: 5px solid black; height:70px;margin-top:50px">								
+        				</form>
+        				
+        				
+        				
+        				
+        				
+								<script>
+									function ajaxCall() {
+										alert ("사용가능한 이메일입니다.")
+										
+										var email = document.getElementById("in_email");
+										var p1 = document.getElementById("p1");
+										
+										 $.ajax({
+							    		     type :"get" ,
+							         			url : "idCheckService", 
+							         			data : {email:email.value},
+							         			dataType : "text",
+							        			success : function(data) {
+							        		 	if(data=="true"){
+							        		 		alert ("이메일 사용가능 확인!");						        		 		
+							        		 	}else{
+							        		 		alert ("사용불가능한 이메일입니다.");
+							        		 	}
+							        		 
+
+							         			},
+							         		error : function() {
+							         		}
+							      			});
+									}
+								
+								
+								
+								</script>
+
+	
+						</ul>
+						</center>
+						</div>
+</body>
+								
+						
+</html>

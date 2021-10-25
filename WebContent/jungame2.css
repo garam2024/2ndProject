@@ -1,0 +1,192 @@
+@charset "EUC-KR";
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#container_all {
+	position: relative;
+}
+
+#lo_top {
+	margin: 0 auto;
+}
+
+.scroll_header {
+	z-indexn: 30;
+	width: 100%;
+}
+
+.menuarea {
+	width: 100%;
+	padding: 0px;
+	height: 30px;
+}
+
+ul {
+	list-style: none;
+	padding: 0px;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+}
+
+.menuarea ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+.menuarea ul li.r_menuarea {
+	float: right;
+	position: relative;
+}
+
+.menuarea ul li.r_menuarea div {
+	float: left;
+	line-height: 30px;
+}
+
+.menuarea ul li.r_menuarea div.line_interval {
+	padding: 0px 16px 0px 16px;
+	font-size: 1px;
+}
+
+.headerarea, .fixed_header {
+	/* margin: 0 auto; */
+	/* width: 100px; */
+	z-index: 999;
+}
+
+.headerarea .headerareaul, .fixed_header .headerareaul {
+	/* width: 1200px; */
+	position: relative;
+	/* margin: 0px auto;
+	*zoom: 1; */
+	clear: both;
+}
+
+.headerarea .headerareaul:after, .fixed_header .headerareaul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.headerarea .headerareaul li.searchli, .fixed_header .headerareaul li.searchli
+	{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.headerarea .headerareaul li.searchli div.searcharea, .fixed_header .headerareaul li.searchli div.searcharea
+	{
+	width: 496px;
+	border: solid 2px #df2811;
+	border-radius: 10px;
+	margin: 0px;
+	float: right;
+	height: 44px;
+	position: relative;
+/* 	*zoom: 1; */
+	clear: both;
+}
+
+.headerarea .headerareaul li.searchli div.searcharea div.search_input,
+	.fixed_header .headerareaul li.searchli div.searcharea div.search_input
+	{
+	position: absolute;
+	left: 106px;
+	top: 0px;
+}
+
+.headerarea .headerareaul li.searchli div.searcharea div, .fixed_header .headerareaul li.searchli div.searcharea div
+	{
+	float: left;
+	vertical-align: middle;
+}
+.headerarea .headerareaul li.searchli div.searcharea div.searchlink, .fixed_header .headerareaul li.searchli div.searcharea div.searchlink{
+	float: right;
+    width: 51px;
+    height: 46px;
+    border-radius: 10px;
+    background-color: #df2811;
+    margin-top: -1px;
+    margin-right: -1px;
+    text-align: right;
+}
+.headerarea .headerareaul li.right_menuicon, .fixed_header .headerareaul li.right_menuicon{
+	float: right;
+    margin: 14px 0px;
+}
+
+.headerarea .headerareaul li.right_menuicon > div, .fixed_header .headerareaul li.right_menuicon > div{
+	float: left;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.headerarea .headerareaul li.right_menuicon > div div.right_menuicon_icon, .fixed_header .headerareaul li.right_menuicon > div div.right_menuicon_icon{
+	    height: 32px;
+    line-height: 28px;
+    position: relative;
+}
+
+.c_hand{
+	cursor: pointer;
+}
+
+.ta_center{
+	    text-align: center;
+}
+
+.headerarea .headerareaul li.right_menuicon > div div.right_menuicon_title, .fixed_header .headerareaul li.right_menuicon > div div.right_menuicon_title{
+	height: 20px;
+    line-height: 20px;
+}
+
+.headerarea .headerareaul li.right_menuicon > div, .fixed_header .headerareaul li.right_menuicon > div{
+	float: left;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.headerarea .headerareaul li.right_menuicon > div div.right_menuicon_icon, .fixed_header .headerareaul li.right_menuicon > div div.right_menuicon_icon{
+	height: 32px;
+    line-height: 28px;
+    position: relative;
+}
+
+.headerarea .headerareaul li.right_menuicon > div div.right_menuicon_icon img, .fixed_header .headerareaul li.right_menuicon > div div.right_menuicon_icon img{
+	vertical-align: middle;
+}
+
+img{
+	border: 0px;
+}
+
+.headerarea .headerareaul li.right_menuicon > div div.right_menuicon_icon div.right_count_cart, .fixed_header .headerareaul li.right_menuicon > div div.right_menuicon_icon div.right_count_cart{
+	    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 10px;
+    background-color: #df2811;
+    text-align: center;
+    font-size: 10px;
+    font-family: Roboto;
+    font-weight: 500;
+    color: #fff;
+    position: absolute;
+    top: -2px;
+    right: 4px;
+}

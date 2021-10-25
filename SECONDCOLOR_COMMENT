@@ -1,0 +1,46 @@
+--------------------------------------------------------
+--  파일이 생성됨 - 월요일-3월-08-2021   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table SECONDCOLOR_COMMENT
+--------------------------------------------------------
+
+  CREATE TABLE "HR"."SECONDCOLOR_COMMENT" 
+   (	"NUM" NUMBER(10,0), 
+	"CONTENT" VARCHAR2(500 BYTE), 
+	"BOARDDATE" DATE, 
+	"NICK" VARCHAR2(50 BYTE), 
+	"TITLE" VARCHAR2(100 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+REM INSERTING into HR.SECONDCOLOR_COMMENT
+SET DEFINE OFF;
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (121,'ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ',to_date('2021-03-06 11:10:39','YYYY-MM-DD HH24:MI:SS'),'박수현','안녕하세요 최성우입니다.');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (122,'아...이 분 찾아갑니다',to_date('2021-03-06 11:10:55','YYYY-MM-DD HH24:MI:SS'),'박수현','여러분 퀴즈입니다.');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (123,'아...',to_date('2021-03-06 11:13:23','YYYY-MM-DD HH24:MI:SS'),'김미희','여러분 퀴즈입니다.');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (124,'웜톤은 무난한 아이보리지용',to_date('2021-03-06 11:13:53','YYYY-MM-DD HH24:MI:SS'),'김미희','추천웜톤');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (125,'헝헝 맞아요 제 최애 과자ㅠㅠ',to_date('2021-03-06 11:14:50','YYYY-MM-DD HH24:MI:SS'),'손지영','여러분...xx사 꼬o칩 초콜렛 맛 드셔보신 분..');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (126,'네 포함입니다~',to_date('2021-03-06 11:15:45','YYYY-MM-DD HH24:MI:SS'),'황해도','가을 웜톤 상의 추천드립니당');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (111,'짙은 남색 계열 셔츠 어떠세용?',to_date('2021-03-06 10:18:39','YYYY-MM-DD HH24:MI:SS'),'강예진','여러분 겨울쿨톤 상의 의상 뭐가 좋을까요?');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (109,'쿨톤이용',to_date('2021-03-06 10:08:52','YYYY-MM-DD HH24:MI:SS'),'손지영','웜톤맨');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (110,'여름쿨톤 밝은 하늘색 추천드려요~',to_date('2021-03-06 10:09:11','YYYY-MM-DD HH24:MI:SS'),'손지영','쿨톤컬러추천좀');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (112,'저도 이거 써봤는데 너모 좋아요ㅠㅠ',to_date('2021-03-06 10:18:57','YYYY-MM-DD HH24:MI:SS'),'강예진','여름쿨톤이신 분 이거 추천~');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (113,'전 여름 쿨톤ㅎ.ㅎ',to_date('2021-03-06 10:19:09','YYYY-MM-DD HH24:MI:SS'),'강예진','으어어어 봄웜톤 이신분 없나요?');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (114,'여성상의도 포함인가요?',to_date('2021-03-06 10:21:18','YYYY-MM-DD HH24:MI:SS'),'박수현','가을 웜톤 상의 추천드립니당');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (115,'연청, 진청색 청바지 어떠세요?',to_date('2021-03-06 10:21:52','YYYY-MM-DD HH24:MI:SS'),'박수현','으어어어 봄웜톤 이신분 없나요?');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (116,'금수저요...너무 부러워요',to_date('2021-03-06 10:26:45','YYYY-MM-DD HH24:MI:SS'),'김미희','여러분 퀴즈입니다.');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (117,'뭐예요 알려주세요...',to_date('2021-03-06 10:27:12','YYYY-MM-DD HH24:MI:SS'),'손지영','여러분 퀴즈입니다.');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (118,'뭐야뭐야 빨리 말해줘',to_date('2021-03-06 10:28:18','YYYY-MM-DD HH24:MI:SS'),'황해도','여러분 퀴즈입니다.');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (119,'이 분 뻘하게 웃기네ㅋㅋㅋㅋㅋ',to_date('2021-03-06 10:44:46','YYYY-MM-DD HH24:MI:SS'),'박병관','안녕하세요 최성우입니다.');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (120,'정답은 세대차이^-^',to_date('2021-03-06 10:46:54','YYYY-MM-DD HH24:MI:SS'),'박병관','여러분 퀴즈입니다.');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (127,'연청색 청바지 어울릴 거 같아요!',to_date('2021-03-06 11:21:02','YYYY-MM-DD HH24:MI:SS'),'손지영','봄 웜톤 상의 아이보리하고 어울리는 하의 색깔');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (128,'아이보리 상의면, 검정색 계열 면바지는 어떠세요?',to_date('2021-03-06 11:21:38','YYYY-MM-DD HH24:MI:SS'),'차현석','봄 웜톤 상의 아이보리하고 어울리는 하의 색깔');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (129,'제 친구는 진청색 면바지 자주 입더라구요~',to_date('2021-03-06 11:22:48','YYYY-MM-DD HH24:MI:SS'),'김미희','봄 웜톤 상의 아이보리하고 어울리는 하의 색깔');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (142,'검은색 면바지도 생각보다 어울려요~',to_date('2021-03-06 12:33:46','YYYY-MM-DD HH24:MI:SS'),'김미희','봄 웜톤 색상 추천해주세요!!');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (131,'편의점 돌아다녀도 다 재고가 없데요..헝헝',to_date('2021-03-06 11:24:48','YYYY-MM-DD HH24:MI:SS'),'최성우','여러분...xx사 꼬o칩 초콜렛 맛 드셔보신 분..');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (140,'진청색 바지 추천드려요~',to_date('2021-03-06 12:32:57','YYYY-MM-DD HH24:MI:SS'),'차현석','봄 웜톤 색상 추천해주세요!!');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (141,'연청도 좋을 거 같아요!',to_date('2021-03-06 12:33:18','YYYY-MM-DD HH24:MI:SS'),'손지영','봄 웜톤 색상 추천해주세요!!');
+Insert into HR.SECONDCOLOR_COMMENT (NUM,CONTENT,BOARDDATE,NICK,TITLE) values (134,'맞아요 너무 좋아요ㅠ.ㅠ',to_date('2021-03-06 11:32:41','YYYY-MM-DD HH24:MI:SS'),'손지영','여름쿨톤이신 분 이거 추천~');

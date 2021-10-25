@@ -1,0 +1,32 @@
+--------------------------------------------------------
+--  파일이 생성됨 - 월요일-3월-08-2021   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table SECONDCOLOR_BOARD
+--------------------------------------------------------
+
+  CREATE TABLE "HR"."SECONDCOLOR_BOARD" 
+   (	"NUM" NUMBER(10,0), 
+	"TITLE" VARCHAR2(100 BYTE), 
+	"CONTENT" VARCHAR2(500 BYTE), 
+	"BOARDDATE" DATE, 
+	"NICK" VARCHAR2(50 BYTE), 
+	"COLOR" NUMBER
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+REM INSERTING into HR.SECONDCOLOR_BOARD
+SET DEFINE OFF;
+Insert into HR.SECONDCOLOR_BOARD (NUM,TITLE,CONTENT,BOARDDATE,NICK,COLOR) values (64,'쿨톤컬러추천좀','여름쿨톤컬러추천해주세요',to_date('2021-03-04 09:33:35','YYYY-MM-DD HH24:MI:SS'),'컬러컬러',7);
+Insert into HR.SECONDCOLOR_BOARD (NUM,TITLE,CONTENT,BOARDDATE,NICK,COLOR) values (72,'여러분...xx사 꼬o칩 초콜렛 맛 드셔보신 분..','존맛대맛꿀맛 편의점에서 보시면 무조건 사드세요',to_date('2021-03-06 11:13:06','YYYY-MM-DD HH24:MI:SS'),'김미희',7);
+Insert into HR.SECONDCOLOR_BOARD (NUM,TITLE,CONTENT,BOARDDATE,NICK,COLOR) values (63,'웜톤맨','원톤이신 분들~~~~',to_date('2021-03-04 09:09:56','YYYY-MM-DD HH24:MI:SS'),'나는무슨톤일까',4);
+Insert into HR.SECONDCOLOR_BOARD (NUM,TITLE,CONTENT,BOARDDATE,NICK,COLOR) values (65,'추천웜톤','요세주해',to_date('2021-03-04 12:43:30','YYYY-MM-DD HH24:MI:SS'),'퍼스널컬러',14);
+Insert into HR.SECONDCOLOR_BOARD (NUM,TITLE,CONTENT,BOARDDATE,NICK,COLOR) values (69,'가을 웜톤 상의 추천드립니당','xx사에서 이번에 아이보리, 연한 노란색 상의 할인하는데 참고하세용',to_date('2021-03-06 10:20:14','YYYY-MM-DD HH24:MI:SS'),'황해도',7);
+Insert into HR.SECONDCOLOR_BOARD (NUM,TITLE,CONTENT,BOARDDATE,NICK,COLOR) values (66,'여름쿨톤이신 분 이거 추천~','ooo사 립 제품 추천드려요
+발색감 좋으뮤.ㅠ',to_date('2021-03-06 09:52:15','YYYY-MM-DD HH24:MI:SS'),'손지영',10);
+Insert into HR.SECONDCOLOR_BOARD (NUM,TITLE,CONTENT,BOARDDATE,NICK,COLOR) values (68,'으어어어 봄웜톤 이신분 없나요?','이번에 아이보리색 티셔츠샀는데, 하의 뭐가 좋을까요?',to_date('2021-03-06 10:18:07','YYYY-MM-DD HH24:MI:SS'),'최태양',5);
+Insert into HR.SECONDCOLOR_BOARD (NUM,TITLE,CONTENT,BOARDDATE,NICK,COLOR) values (67,'여러분 겨울쿨톤 상의 의상 뭐가 좋을까요?','겨울쿨톤 상의 추천해주세요',to_date('2021-03-06 10:17:23','YYYY-MM-DD HH24:MI:SS'),'차현석',2);
+Insert into HR.SECONDCOLOR_BOARD (NUM,TITLE,CONTENT,BOARDDATE,NICK,COLOR) values (70,'안녕하세요 최성우입니다.','안녕히 계세요 ',to_date('2021-03-06 10:22:47','YYYY-MM-DD HH24:MI:SS'),'최성우',9);
+Insert into HR.SECONDCOLOR_BOARD (NUM,TITLE,CONTENT,BOARDDATE,NICK,COLOR) values (71,'여러분 퀴즈입니다.','아빠가 차가 5대 이고, 아들이 차가 2대 일 때 뭐라고할까요?',to_date('2021-03-06 10:26:20','YYYY-MM-DD HH24:MI:SS'),'박병관',20);

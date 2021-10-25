@@ -1,0 +1,37 @@
+--------------------------------------------------------
+--  파일이 생성됨 - 월요일-3월-08-2021   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table SECONDCOLOR_CLIENT
+--------------------------------------------------------
+
+  CREATE TABLE "HR"."SECONDCOLOR_CLIENT" 
+   (	"EMAIL" VARCHAR2(50 BYTE), 
+	"PW" VARCHAR2(50 BYTE), 
+	"NICK" VARCHAR2(50 BYTE), 
+	"TEL" VARCHAR2(50 BYTE), 
+	"COLOR" VARCHAR2(30 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+REM INSERTING into HR.SECONDCOLOR_CLIENT
+SET DEFINE OFF;
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('smart@naver.com','1016skdms','퍼스널조아','010-5555-5555',null);
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('kk@nate.com','1016skdms','유경이','010-9999-9999',null);
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('kkkkyaho@nate.com','1016skdms','나는무슨톤일까','010-7777-7777',null);
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('reachse1@naver.com','1016skdms','컬러컬러','010-8888-8888',null);
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('kkkk1@naver.com','1016skdms','퍼스널컬러','010-8888-8888',null);
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('asd@gmail.com','06110006','우영우영','010-4518-2671',null);
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('asdf@gmail.com','06110006','홍우영','010-0000-0000',null);
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('thswldud','1','손지영','9999','0');
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('admin','1','관리자','9999','0');
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('ckgustjr','1','차현석','9999','0');
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('chltjddn','1','최성우','9999','0');
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('chlxodid','1','최태양','9999','0');
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('rkddPwls','1','강예진','9999','0');
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('ghkdgoeh','1','황해도','9999','0');
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('rlaalgml','1','김미희','9999','0');
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('qkrqudrhks','1','박병관','9999','0');
+Insert into HR.SECONDCOLOR_CLIENT (EMAIL,PW,NICK,TEL,COLOR) values ('qkrtngus','1','박수현','9999','0');
